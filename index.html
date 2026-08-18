@@ -151,7 +151,7 @@
         <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
             
             <!-- Category 1: Health & Beauty -->
-            <div class="group bg-white border border-slate-100 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between relative" id="health">
+            <div class="product-card group bg-white border border-slate-100 rounded-2xl data-aos="fade-left">
                 <span class="absolute top-3 right-3 z-20 bg-red-500 text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider shadow-md">Sale</span>
                 <div class="img-zoom-container">
                     <img src="https://images.unsplash.com/photo-1513519245088-0e12902e5a38?q=80&w=500&auto=format&fit=crop" alt="Cute Panda Night Light">
@@ -173,7 +173,7 @@
             </div>
 
             <!-- Category 2: Health & Beauty -->
-            <div class="group bg-white border border-slate-100 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between relative">
+            <div class="product-card group bg-white border border-slate-100 rounded-2xl data-aos="fade-right">
                 <span class="absolute top-3 right-3 z-20 bg-sky-600 text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider shadow-md">Popular</span>
                 <div class="img-zoom-container">
                     <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?q=80&w=500&auto=format&fit=crop" alt="Professional Hair Styler">
@@ -491,6 +491,8 @@
             e.preventDefault();
             document.getElementById('order-form').classList.add('hidden');
             document.getElementById('order-success').classList.remove('hidden');
+            <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>AOS.init();</script>
         }
     </script>
 </body>
