@@ -1,0 +1,19 @@
+/* Base state: invisible */
+.product-card {
+    opacity: 0;
+    transition: all 0.8s ease-out;
+}
+
+/* Animations classes */
+.product-card.animate-left {
+    transform: translateX(-50px);
+}
+.product-card.animate-right {
+    transform: translateX(50px);
+}
+
+/* State when active (scrolled into view) */
+.product-card.in-view {
+    opacity: 1;
+    transform: translateX(0);
+}
